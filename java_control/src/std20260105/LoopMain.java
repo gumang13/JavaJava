@@ -94,22 +94,31 @@ public class LoopMain {
 //		}
 //		}
 		
-		System.out.println("1~50 중 입력 : ");
+		
+			System.out.println("1~50 중 입력 : ");
 		int user = kbd.nextInt();
-		int com = (int)Math.floor(Math.random()*50)+1;
-		int cha = 0;
+		int b=0,com=0;
+		int j = 1,t=50;
 		while(true) {
-			if(com>user) {
+		
+			 com = (int)Math.floor(Math.random()*t)+j;      //최초 1회만 나온 주사위로 설정하고 그이후부턴 낮아지거나   
+			
+			if(com>user) {  
 				System.out.println("Down"+com);
-				com = (int)Math.floor(Math.random()*(50-com+1))+1;
-			}if(com<user) {
+				t=com-j;
+			
+			
+				       
+			}else if(com<user) {
 				System.out.println("up"+com);
-				com = (int)Math.floor(Math.random()*50)+com;
-			}if(user==com) {
+				int j1=j;
+				j=com;
+				t=t-j+j1;
+		    }
+			else{
 				System.out.println("정답!!");
 				break;
-			}
-		}
+			} 
 		
 		
 		
@@ -202,3 +211,4 @@ public class LoopMain {
 */
 
     		
+
