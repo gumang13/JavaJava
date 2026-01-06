@@ -101,14 +101,12 @@ public class LoopMain {
 		int j = 1,t=50;
 		while(true) {
 		
-			 com = (int)Math.floor(Math.random()*t)+j;      //최초 1회만 나온 주사위로 설정하고 그이후부턴 낮아지거나   
+			 com = (int)Math.floor(Math.random()*t)+j;       
 			
 			if(com>user) {  
 				System.out.println("Down"+com);
 				t=com-j;
-			
-			
-				       
+									       
 			}else if(com<user) {
 				System.out.println("up"+com);
 				int j1=j;
@@ -119,7 +117,7 @@ public class LoopMain {
 				System.out.println("정답!!");
 				break;
 			} 
-		
+		}
 		
 		
 		

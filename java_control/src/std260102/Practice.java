@@ -8,9 +8,6 @@ class bike{
 		this.handle = handle;
 	}
 	String handle;
-	public void Honk{
-		System.out.println("따르릉");
-	}
 	
 	
 	
