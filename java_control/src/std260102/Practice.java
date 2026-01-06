@@ -1,46 +1,32 @@
 package std260102;
 
-class bike{
-    String whill;
-    public bike(String whill, String handle) {
-		super();
-		this.whill = whill;
-		this.handle = handle;
-	}
-	String handle;
-	
-	
-	
-}
-
 public class Practice {
-	 
-	 
-		  void Cloks() {
-			 System.out.println("honk honk!");
-		 }
-	 
-	 private static int hap(int n1, int n2) {
-			// 정수2개를 더해서 그 결과를 반환
-			int sum = n1+n2;
-			
-			return sum;
-		}
-	 
-	 private static void volumeup() {
-		 
-		 System.out.println("볼륨을 키워주세요");
-	 }
-	
+	 	 			
 public static void main(String[] args) {
+	//길이가 10인 int 배열을 만들고, 1~100 사이 난수로 채운 뒤 모든 값을 출력하시오.
+	//난수로 채운 배열에서 최댓값과 최솟값을 찾아 출력하시오
 	
-	bike bike = new bike("바퀴","핸들");
-	 
-	volumeup();
-	int i = 2151 ; 
-	int k = 985616;
-	int sum=hap(i, k);
-	System.out.println(sum);
+	int[] A= new int[10];
+	
+	int M = A[0];
+	int m = A[0];
+	for(int i=0;i<=9;i++) { 
+		int r = (int)Math.floor(Math.random()*100)+1;
+		A[i]=r;
+		m = A[0];
+		
+		if(A[i]>M)
+			M=A[i];
+		else if(A[i]<m)
+			m=A[i];
+		
+		
+		System.out.println(A[i]);
+	}
+	System.out.println("최댓값 : "+M);
+	System.out.println("최솟값 : "+m);
+	
+	
 }
 }
 
