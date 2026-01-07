@@ -23,14 +23,18 @@ public class Array2 {
 //				 System.out.println( bingo[j*5+k] );
 //			 }
 //		 }
+		int[] num= new int[25];
 		 
-		 for(int i=1; i<=25;i++) {
-			 int[] num= new int[25];
+		 for(int i=0;i<=24;i++) {
 			 int ran = (int)Math.floor(Math.random()*100)+1;
-			 if(num.)
-			 num[i]=ran;
+			 num[i] =ran;
+			 
+			 for(int j=0;j<=i;j++)
+				 if(num[i]==num[j])
+			  num[i]=(int)Math.floor(Math.random()*100)+1;
 		 }
-		 
+		 for(int play : num)
+		 System.out.println(play);
 	}
 
 }
