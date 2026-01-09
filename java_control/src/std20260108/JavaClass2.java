@@ -1,8 +1,12 @@
 package std20260108;
 
+import java.lang.reflect.Member;
 public class JavaClass2 {
 
 	public static void main(String[] args) {
+		
+		
+		
 		
 		Movie movie = new Movie();
 		// new Movie() 생성자 메서드
@@ -29,6 +33,8 @@ public class JavaClass2 {
        System.out.println("재생새간 : "+music.songtime);
        
        Music music2 = new Music();
+       
+       
 	}
 
 } 
