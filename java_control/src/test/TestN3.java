@@ -27,7 +27,7 @@ public class TestN3 {
 	    	
 	    	if(junM<jun) {junM=jun;             //전환율 최대값 찾기
 	    }
-	    	
+	    
 	    	
 	    }
 	    for(int i=0;i<consult.length;i++) {
