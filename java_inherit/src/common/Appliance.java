@@ -1,6 +1,6 @@
 package common;
 
-public class Appliance {
+public abstract class Appliance {
 	
    protected boolean onoff= false;     // 전원여부
    protected String name;              // 제품명
@@ -12,15 +12,10 @@ public class Appliance {
 	   this.powerCon=powerCon;
    } 
    
-    public void power() {
-     	onoff=!onoff;
-	
-	    String res = onoff? "켜짐":"꺼짐";
-	
-	    System.out.println("전원 "+res);
-	
+    public abstract void power();  //추상메서드
 
-}
+     // 추상 메서드를 가지고 있는 클래스는 반드시 추상 클래스 여야만 한다
+
 	@Override
 	public String toString() {
 		return "Appliance [onoff=" + onoff + ", name=" + name + ", powerCon=" + powerCon + "]";
