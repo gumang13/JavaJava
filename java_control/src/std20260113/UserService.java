@@ -58,7 +58,7 @@ public class UserService {
     	 else {
     		 System.out.println("아이디 또는 비밀번호가 잘못되었습니다");
     	 }
-//    	 boolean isLogin=true;
+//    	 boolean isLogin=true;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 //    	 for(User user : users) {
 //    		 if(user.getId().equals(id)&&user.getPassward().equals(password)) {
 //    			System.out.println("로그인 성공 !!"); 
