@@ -7,17 +7,12 @@ public class Income extends Transaction{
 		
 	}
 
-	@Override
-	public void income(int num, String date, String memo) {
-		amount= amount+num;
-		System.out.println("["+num+"]원 수입 날짜 : ["+date+"] 메모: ["+memo+"]");
-		
-	}
+	
 
 	@Override
-	public void expence(int num, String date, String memo) {
-		
-		
+	public int money(int num) {
+		tot=amount+num;
+		return amount+num;
 	}
 
 }

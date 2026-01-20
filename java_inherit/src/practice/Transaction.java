@@ -4,18 +4,17 @@ public abstract class Transaction {
 	  protected int amount;
 	  protected String date;
 	  protected String memo;
-	  
+      protected int tot;	  
 	  public Transaction(int amount, String date, String memo) {
 		super();
 		this.amount = amount;
 		this.date = date;
 		this.memo = memo;
 	  }
-	  public abstract void income(int num, String date, String memo);
-	  public abstract void expence(int num, String date, String memo);
+	  public abstract int money(int num);
 	  
 	  public void showAmount() {
-		  System.out.println(amount);
+		  System.out.println(tot);
 	  }
 	
 	  
