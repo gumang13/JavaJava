@@ -1,0 +1,51 @@
+// 2026-01-21  수
+ 
+ 인터 프린터 // 통역      -- 한줄씩 변환
+ 컴파일     // 번역      -- 전체를 한번에 변환 
+ 
+ 한 덩어리로 만드는법 = 구분자가있는 문자열 , 배열 , 리스트 ,객체
+ 구분자 있는 문자열 - 문자열에 요소들을 다 담고 리스트를 만들어서 리스트 안에다가 add  한다a
+ 배열 = 인덱스마다 값을 지정해 준 후 리스트에 담는다
+ list<제너릭(타입지정)>
+ 	// HashMap - key, value
+ HashMap<key의 자료형,value의 자료형> map = new HashMap<>();       << HashMap 을 이용해서 새로 물건을 만들고 그 주소를 map 에 저장
+ map key의 값이 같을때 value의 값이 수정됨  ex map.put("name", "마동석"); = {name=마동석},map.put("name","주지훈");  = {name=주지훈}
+ map 장점 - key 값만 알면 바로 저장된 값을 불러올수 있음
+ for(String key : map.keySet()) {
+			System.err.println(key+" : "+map.get(key));
+		}               향상된for문 map에서도 반복문 사용 가능 !!
+ ArrayList 메모리에 연속된 공간을 할당받음 . 
+ set 중복안됨
+ linkedlist = 끼워넣기 가능 앞에 데이터 뒤에주소 그리고 그 각각을 노드라고 부름
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

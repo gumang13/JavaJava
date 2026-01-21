@@ -13,7 +13,7 @@ public class _Exec2 {
         numbers.add(30);
         
         // 오름차순 정렬 ( 기본 )
-        Collation
+        
         
 		
 		
