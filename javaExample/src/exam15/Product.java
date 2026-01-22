@@ -5,6 +5,10 @@ public class Product {
    private int price;
    private int productCount;
    
+   public void sellProduct(String name) {
+	   productCount++;
+   }
+   
    public void productCount() {
 	   productCount++;
    }
