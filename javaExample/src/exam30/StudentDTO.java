@@ -46,21 +46,37 @@ public class StudentDTO {
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
 	}
-	public StudentDTO() {
-		inputField();
+	public StudentDTO() {}
+		
+	public void display() {
+		System.out.printf("%d \t %s \t %s \t %s \t %s \t %s\n",hakbun,name,ssn,phone,address,createdDate);
 	}
 	// 메서드
-	public void inputField() {
+	public void inputField(String gubun) {
 		Scanner kbd=new Scanner(System.in);
-		System.out.println("이름");
-		this.name=kbd.nextLine();
-		System.out.println("주민등록번호");
-		this.ssn=kbd.nextLine();
+		if(gubun.equals("vie")||gubun.equals("sujung")||gubun.equals("sakje"))
+			System.out.println("학번 : ");
+		String hakbun_=kbd.nextLine();
+		this.hakbun=Integer.parseInt(hakbun_);
+		
+		if(gubun.equals("chuga")) {
+		
+			System.out.println("이름");
+			this.name=kbd.nextLine();
+			System.out.println("주민등록번호");
+			this.ssn=kbd.nextLine();
+			System.out.println("전화번호");
+			this.phone=kbd.nextLine();
+			System.out.println("주소");
+			this.address=kbd.nextLine();
+			
+		}else if(gubun.equals("sujung")) {
+	
 		System.out.println("전화번호");
 		this.phone=kbd.nextLine();
 		System.out.println("주소");
 		this.address=kbd.nextLine();
-		
+		}
 	}
 	
 	
